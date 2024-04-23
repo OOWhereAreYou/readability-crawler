@@ -8,6 +8,11 @@ Readability Crawler 是一款基于 Node.js 的爬虫，可以爬取网页的标
 目的是根据url提取出方便格式化方便阅读markdown的文章内容。
 
 
+## crawl参数说明
+
+- `url`：必填，需要爬取的网页的url地址。
+- `hasScreenshot`：非必填，是否需要截图，默认为false。
+
 使用示例：
 
 ```javascript
@@ -35,7 +40,7 @@ crawler();
 //     lang: string | undefined; // 语言
 //     length: number | undefined; // 长度
 //     excerpt: string | undefined; // 摘要
-//     screenShot: Buffer | undefined; // 截图
+//     screenShot: Buffer | undefined; // 截图, 如果设置了hasScreenshot为true，则会返回Buffer类型
 // }
 
 
