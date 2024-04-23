@@ -1,10 +1,19 @@
 {
   "name": "readability-crawler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./src/index.ts",
+    "default": "./dist/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OOWhereAreYou/readability-crawler"
   },
   "keywords": [],
   "author": "",
